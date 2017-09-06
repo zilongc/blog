@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>react 更新dom</title>
+    <!--
+    下面的例子，改编自下面链接中的hello world 例子；
+    使用到了babel，ES6语法转化器
+    注意script标签中的type=text/babel
+    https://facebook.github.io/react/docs/installation.html
+    -->
+</head>
+<body>
+
+<div id="content">
+    我是初始化内容，等待更新
+</div>
+<script crossorigin src="https://unpkg.com/react@15/dist/react.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+<script type="text/babel">
+    ReactDOM.render(
+    <span>我是更新之后的内容</span>,
+        document.getElementById('content')
+    );
+</script>
+</body>
+</html>
