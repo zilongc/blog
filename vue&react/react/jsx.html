@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jsx</title>
+</head>
+<body>
+
+<div id="root">
+    我是初始化内容，等待更新
+</div>
+<script crossorigin src="https://unpkg.com/react@15/dist/react.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+<script type="text/babel">
+    function formatName(user) {
+        return user.firstName + ' ' + user.lastName;
+    }
+
+    const user = {
+        firstName: 'Harper',
+        lastName: 'Perez'
+    };
+
+    const element = (
+            <h1>
+                Hello, {formatName(user)}!
+            </h1>
+    );
+
+    ReactDOM.render(
+        element,
+        document.getElementById('root')
+    );
+</script>
+
+</body>
+</html>
