@@ -20,3 +20,13 @@ http://www.chinahadoop.cn/
 git 
 
 http://www.cnblogs.com/popfisher/p/5731232.html 
+
+## PHP 
+
+https://github.com/52fhy/php_dev_environment php 环境的理解
+
+http://blog.csdn.net/u014735730/article/details/41125771 简单学习
+
+http://zongliwei.com/posts/3.html nginx php-fpm
+
+https://laravel-china.org/articles/4098/the-first-step-to-becoming-a-senior-php-programmer-debug-xdebug-configuration debug
